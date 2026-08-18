@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Privacy Policy - Rating Viewer for Letterboxd &amp; Crunchyroll</title>
+  <link rel="stylesheet" href="privacy-policy.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Rating Viewer for Letterboxd &amp; Crunchyroll</p>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: August 18, 2026</p>
+    </header>
+
+    <section aria-labelledby="overview">
+      <h2 id="overview">Overview</h2>
+      <p>
+        Rating Viewer processes a limited amount of data to display color-coded
+        rating indicators on Letterboxd film posters and Crunchyroll anime cards. The extension has
+        no developer-operated server, analytics, advertising, or tracking service.
+      </p>
+    </section>
+
+    <section aria-labelledby="data">
+      <h2 id="data">Data the extension processes</h2>
+      <p>When you browse a supported website, the extension:</p>
+      <ul>
+        <li>Checks the active tab's URL when the popup opens to select the matching settings page. This URL is not stored.</li>
+        <li>Reads film links and identifiers displayed on Letterboxd pages.</li>
+        <li>Requests the corresponding public Letterboxd film pages to obtain their average ratings.</li>
+        <li>Reads public viewer ratings already displayed in Crunchyroll anime cards. These ratings are not cached.</li>
+        <li>
+          Stores normalized film paths, ratings, cache timestamps, and temporary
+          request-error information in <code>chrome.storage.local</code>.
+        </li>
+        <li>
+          Stores extension preferences—such as whether borders are enabled,
+          rating groups, group names, colors, border width, and animation
+          settings for each supported site—in <code>chrome.storage.sync</code>.
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">How the data is used</h2>
+      <p>
+        Film and anime links and ratings are used solely to display public ratings
+        on supported websites. The local cache reduces repeated requests to Letterboxd.
+        Preferences are used solely to preserve the user's chosen display
+        configuration.
+      </p>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">Storage and retention</h2>
+      <p>
+        The local rating cache contains no more than 1,000 film entries. Rated
+        films normally expire after seven days, unrated films after one day, and
+        failed requests after ten minutes. Expired entries are removed during
+        subsequent cache maintenance. Local extension storage is cleared when
+        the extension is removed.
+      </p>
+      <p>
+        If Chrome Sync is enabled, Chrome may synchronize extension preferences
+        between browsers where the user is signed in. If Chrome Sync is disabled,
+        those preferences remain stored locally. Chrome Sync is operated by Google
+        and is subject to the user's Chrome and Google Account settings. Film paths
+        and cached ratings are not stored in Chrome Sync.
+      </p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">Data transmission and sharing</h2>
+      <p>
+        The developer does not receive, sell, rent, or share user data. Additional
+        website requests made by the extension are sent only to HTTPS Letterboxd addresses.
+        These requests may contain ordinary information handled by the browser and
+        Letterboxd, such as the user's IP address, user agent, and existing
+        Letterboxd session cookies. Crunchyroll ratings are read from the page that
+        is already open and are not separately requested or retained. The extension
+        does not read or store passwords or authentication cookies.
+      </p>
+      <p>
+        Chrome may transmit extension preferences through Chrome Sync when that
+        feature is enabled. Those synchronized preferences are handled by Google,
+        not received by the extension developer.
+      </p>
+    </section>
+
+    <section aria-labelledby="control">
+      <h2 id="control">Your choices</h2>
+      <p>
+        You can change or replace synchronized preferences from the extension
+        popup. You can control Chrome Sync through Chrome's settings. Removing the
+        extension clears its local rating cache.
+      </p>
+    </section>
+
+    <section aria-labelledby="limited-use">
+      <h2 id="limited-use">Limited use</h2>
+      <p>
+        Information processed by the extension is used only to provide its
+        user-facing rating-display functionality. The extension's use of
+        information complies with the Chrome Web Store User Data Policy, including
+        the Limited Use requirements.
+      </p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes to this policy</h2>
+      <p>
+        This policy will be updated if the extension's data-handling practices
+        change. Material changes will be disclosed to users as required by the
+        Chrome Web Store policies.
+      </p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Developer and contact</h2>
+      <!-- REQUIRED: Replace both bracketed placeholders before publication. -->
+      <dl class="contact-details">
+        <div>
+          <dt>Developer</dt>
+          <dd><mark>Umikron</mark></dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd><mark>dev.chrome@umikron.de</mark></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+</body>
+</html>
